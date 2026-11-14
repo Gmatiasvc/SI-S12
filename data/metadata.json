@@ -1,0 +1,226 @@
+{
+  "uci": {
+    "name": "Energy Efficiency",
+    "uci_id": 242,
+    "num_instances": 768,
+    "num_features": 8,
+    "abstract": "This study looked into assessing the heating load and cooling load requirements of buildings (that is, energy efficiency) as a function of building parameters.",
+    "creators": [
+      "Athanasios Tsanas",
+      "Angeliki Xifara"
+    ],
+    "year_of_dataset_creation": 2012,
+    "repository_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+    "data_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00242/ENB2012_data.xlsx",
+    "license": "CC BY 4.0 (UCI Machine Learning Repository)"
+  },
+  "local_files": {
+    "xlsx": "data/ENB2012_data.xlsx",
+    "csv": "data/energy_efficiency.csv"
+  },
+  "shape": {
+    "rows": 768,
+    "cols": 10
+  },
+  "missing_values": {
+    "X1": 0,
+    "X2": 0,
+    "X3": 0,
+    "X4": 0,
+    "X5": 0,
+    "X6": 0,
+    "X7": 0,
+    "X8": 0,
+    "Y1": 0,
+    "Y2": 0
+  },
+  "duplicate_rows": 0,
+  "ranges": {
+    "X1": {
+      "min": 0.62,
+      "max": 0.98,
+      "mean": 0.7641666666666667,
+      "std": 0.10577747587475192,
+      "median": 0.75,
+      "unique_count": 12
+    },
+    "X2": {
+      "min": 514.5,
+      "max": 808.5,
+      "mean": 671.7083333333334,
+      "std": 88.08611605586836,
+      "median": 673.75,
+      "unique_count": 12
+    },
+    "X3": {
+      "min": 245.0,
+      "max": 416.5,
+      "mean": 318.5,
+      "std": 43.6264814379949,
+      "median": 318.5,
+      "unique_count": 7
+    },
+    "X4": {
+      "min": 110.25,
+      "max": 220.5,
+      "mean": 176.60416666666666,
+      "std": 45.16595022292048,
+      "median": 183.75,
+      "unique_count": 4
+    },
+    "X5": {
+      "min": 3.5,
+      "max": 7.0,
+      "mean": 5.25,
+      "std": 1.7511404367453496,
+      "median": 5.25,
+      "unique_count": 2
+    },
+    "X6": {
+      "min": 2.0,
+      "max": 5.0,
+      "mean": 3.5,
+      "std": 1.1187625870603635,
+      "median": 3.5,
+      "unique_count": 4
+    },
+    "X7": {
+      "min": 0.0,
+      "max": 0.4,
+      "mean": 0.234375,
+      "std": 0.13322056291470777,
+      "median": 0.25,
+      "unique_count": 4
+    },
+    "X8": {
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 2.8125,
+      "std": 1.5509596642247505,
+      "median": 3.0,
+      "unique_count": 6
+    },
+    "Y1": {
+      "min": 6.01,
+      "max": 43.1,
+      "mean": 22.3071953125,
+      "std": 10.090203970187025,
+      "median": 18.95,
+      "unique_count": 587
+    },
+    "Y2": {
+      "min": 10.9,
+      "max": 48.03,
+      "mean": 24.58776041666667,
+      "std": 9.513305562326169,
+      "median": 22.08,
+      "unique_count": 636
+    }
+  },
+  "variables": {
+    "X1": {
+      "name": "Compacidad relativa",
+      "role": "Entrada (Continua)",
+      "type": "Continua",
+      "unit": "Adimensional (ratio)",
+      "description": "Relación entre el área superficial de un cubo de igual volumen y el área del edificio.",
+      "min": 0.62,
+      "max": 0.98
+    },
+    "X2": {
+      "name": "Área superficial",
+      "role": "Entrada (Continua)",
+      "type": "Continua",
+      "unit": "m²",
+      "description": "Superficie total exterior del edificio (muros, techo y base).",
+      "min": 514.5,
+      "max": 808.5
+    },
+    "X3": {
+      "name": "Área de paredes",
+      "role": "Entrada (Continua)",
+      "type": "Continua",
+      "unit": "m²",
+      "description": "Superficie total de las paredes verticales exteriores.",
+      "min": 245.0,
+      "max": 416.5
+    },
+    "X4": {
+      "name": "Área de techo",
+      "role": "Entrada (Continua)",
+      "type": "Continua",
+      "unit": "m²",
+      "description": "Superficie de la cubierta del edificio (proyección horizontal).",
+      "min": 110.25,
+      "max": 220.5
+    },
+    "X5": {
+      "name": "Altura total",
+      "role": "Entrada (Continua)",
+      "type": "Continua",
+      "unit": "m",
+      "description": "Altura total de la edificación (3.5 m para 1 planta o 7.0 m para 2 plantas).",
+      "min": 3.5,
+      "max": 7.0
+    },
+    "X6": {
+      "name": "Orientación",
+      "role": "Entrada (Categórica nominal)",
+      "type": "Nominal (codificada 2–5)",
+      "unit": "Código nominal",
+      "description": "Orientación cardinal principal del edificio: 2=Norte, 3=Este, 4=Sur, 5=Oeste.",
+      "min": 2,
+      "max": 5
+    },
+    "X7": {
+      "name": "Área acristalada",
+      "role": "Entrada (Continua)",
+      "type": "Continua",
+      "unit": "Proporción del piso (0.00–0.40)",
+      "description": "Proporción de área de ventanas respecto al área total del suelo (0%, 10%, 25%, 40%).",
+      "min": 0.0,
+      "max": 0.4
+    },
+    "X8": {
+      "name": "Distribución del acristalamiento",
+      "role": "Entrada (Categórica nominal)",
+      "type": "Nominal (codificada 0–5)",
+      "unit": "Código nominal",
+      "description": "Distribución direccional de ventanas: 0=Sin ventanas, 1=Uniforme, 2=Norte, 3=Este, 4=Sur, 5=Oeste.",
+      "min": 0,
+      "max": 5
+    },
+    "Y1": {
+      "name": "Carga de calefacción (Heating Load)",
+      "role": "Objetivo principal (y)",
+      "type": "Continua",
+      "unit": "kWh/m²",
+      "description": "Energía térmica requerida para calefacción anual simulada en Ecotect.",
+      "min": 6.01,
+      "max": 43.1
+    },
+    "Y2": {
+      "name": "Carga de refrigeración (Cooling Load)",
+      "role": "Objetivo secundario (excluida de X)",
+      "type": "Continua",
+      "unit": "kWh/m²",
+      "description": "Energía requerida para enfriamiento. No debe usarse como predictor de Y1 (evita data leakage).",
+      "min": 10.9,
+      "max": 48.03
+    }
+  },
+  "x6_labels": {
+    "2": "Norte (2)",
+    "3": "Este (3)",
+    "4": "Sur (4)",
+    "5": "Oeste (5)"
+  },
+  "x8_labels": {
+    "0": "Sin acristalamiento (0)",
+    "1": "Uniforme (1)",
+    "2": "Norte (2)",
+    "3": "Este (3)",
+    "4": "Sur (4)",
+    "5": "Oeste (5)"
+  }
+}

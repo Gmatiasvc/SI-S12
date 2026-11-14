@@ -1,0 +1,27 @@
+# Entornos virtuales y Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Archivos auxiliares de compilación LaTeX (conserva .tex y .pdf)
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Sistema operativo / Editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
